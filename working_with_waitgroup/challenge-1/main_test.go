@@ -20,6 +20,7 @@ func Test_updateMessage(t *testing.T) {
 }
 
 func Test_printMessage(t *testing.T) {
+	// syntax below is for getting output
 	stdOut := os.Stdout
 
 	r, w, _ := os.Pipe()
