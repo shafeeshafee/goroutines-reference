@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"sync"
-	"time"
 )
 
 func printSomething(s string, wg *sync.WaitGroup) {
@@ -33,8 +32,6 @@ func main() {
 	}
 
 	wg.Wait()
-
-	time.Sleep(1 * time.Second)
 
 	wg.Add(1)
 	printSomething("This is the second thing to be printed.", &wg)
